@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+// Custom functions
+
+@mixin unclearfix {
+  &::after, &::before {
+    clear: none;
+    content: none;
+    display: inline;
+  }
+}

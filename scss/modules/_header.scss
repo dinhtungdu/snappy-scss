@@ -1,0 +1,39 @@
+.site-branding {
+  .container {
+    position: relative;
+    z-index: 9999;
+  }
+}
+.logo {
+  display: inline-block;
+  margin-bottom: 0;
+
+  @include media($large-screen) {
+    margin-bottom: 0 !important;
+  }
+
+  img {
+    vertical-align: text-bottom;
+  }
+}
+.header-content {
+  display: none;
+  @include media($large-screen) {
+    display: block;
+  }
+}
+
+#masthead {
+  .search-form {
+    display: none;
+
+    @include media($large-screen) {
+      display: block;
+      width: 15em;
+      margin-top: 1em;
+    }
+  }
+  .mobile-search .search-form {
+    display: none;
+  }
+}

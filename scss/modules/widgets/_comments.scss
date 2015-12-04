@@ -1,0 +1,35 @@
+.aside-comments {
+	height: 300px;
+	overflow-y: scroll;
+	
+	li {
+		font-size: em(12);
+		margin: 10px 0;
+	}
+	img {
+		width: 50px;
+		float: left;
+		margin-right: 5px;
+		padding-top: 4px;
+		display: block;
+		margin-bottom: 4px;
+	}
+	a {
+		color: #0077cf;
+		font-weight: bold;
+		line-height: 1;
+		&.author-link {
+			margin-right: 5px;
+		}
+		&.post-link {
+			@include clearfix;
+			margin-top: 3px;
+			display: block;
+		}
+	}
+	p {
+		display: inline;
+		line-height: 1;
+		margin: 0;
+	}
+}

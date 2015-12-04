@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+.redux-container {
+	max-width: 1000px;
+}
+
+// .redux-main {
+// 	.redux-section-indent-start {
+// 		background: #eee;
+// 		border: 1px solid #ddd;
+// 		padding: 10px;
+// 		color: #333;
+// 		cursor: pointer;
+// 		h3 {
+// 			position: relative;
+// 			margin-top: 0 !important;
+// 			margin-bottom: 0;
+// 			i.el {
+// 				position: absolute;
+// 				right: 10px;
+// 				top: 10px;
+// 			}
+// 		}
+// 		.redux-section-desc {
+// 			margin-bottom: 0;
+// 			display: none
+// 		}
+// 		&.expanded {
+// 			.redux-section-desc {
+// 				display: block;
+// 			}
+// 			h3 {
+// 				margin-bottom: 15px;
+// 				i.el:before {
+// 					content: "";
+// 				}
+// 			}
+// 		}
+// 	}
+// 	.snappy-section-wrap {
+// 		// display: none;
+// 		// visibility: visible;
+// 		&+.redux-section-field {
+// 			min-height: 20px;
+// 		}
+// 	}
+// }

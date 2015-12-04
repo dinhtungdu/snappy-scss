@@ -1,0 +1,27 @@
+$footer-background: color(white);
+$footer-color: color(black);
+$footer-link-color: color(primary);
+$footer-padding: 0em;
+$footer-heading: 1em;
+$footer-text: em(13);
+$widget-title-color: #007527;
+
+footer#colophon {
+	background: $footer-background;
+	color: $footer-color;
+	padding-top: $footer-padding;
+	padding-bottom: $footer-padding;
+	font-size: $footer-text;
+
+	a {
+		color: $footer-link-color;
+	}
+
+	p {
+		color: $footer-color;
+	}
+
+	.widget-title {
+		color: $widget-title-color;
+	}
+}

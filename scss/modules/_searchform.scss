@@ -1,0 +1,62 @@
+$search-padding: 0.6em 0.5em 0.4em 0.5em;
+$search-button-padding: 0.5em * 1.5;
+$search-width: 20em;
+$search-font-size: 0.9em;
+$search-margin: 0.5em 0 0 0;
+$search-color: color(gray);
+$search-backgound-color: color(primary, light);
+$search-button-color: color(invert);
+$search-button-background: color(primary);
+
+.search-form {
+  display: block;
+  float: none;
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  margin: $search-margin;
+  @include clearfix;
+
+  input[type="search"] {
+    margin: 0;
+    padding: $search-padding;
+    font-size: $search-font-size;
+    line-height: 1;
+    width: 100%;
+
+    @include placeholder {
+      color: $search-color;
+      font-style: italic;
+      line-height: 1;
+      
+    }
+  }
+
+  button {
+    @include position(absolute, 0 0 null null);
+    background: $search-button-background;
+    color: $search-button-color;
+    padding: $search-button-padding;
+    font-size: $search-font-size;
+    line-height: 1;
+
+    i {
+      line-height: 1;
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+
+  &.type-2 {
+    input[type="search"] {
+      border-radius: 0;
+    }
+
+    button {
+      background: $search-backgound-color;
+      color: white;
+      border-radius: 0;
+      padding: $search-padding $search-button-padding;
+    }
+  }
+}
